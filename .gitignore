@@ -1,0 +1,29 @@
+# Maven
+target/
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Java
+*.class
+*.log
+
+# Spring Boot
+.mvn/
+mvnw
+mvnw.cmd
+
+# Application
+.env
+application-local.properties

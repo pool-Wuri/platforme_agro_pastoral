@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/agropastoral
+    username: agropastoral_user
+    password: "S3cur3!AgroPastoral#2026"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
+jwt:
+  secret: "X9f!aT7#QwL2@zR8^mN0$kP3*eY6%hJ1&uV5+oC4~dB7!tZ9"
+  expiration: 86400000 # 24 heures
+
+logging:
+  level:
+    com.anptic.agropastoral.audit: INFO

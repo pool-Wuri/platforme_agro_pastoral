@@ -23,4 +23,10 @@ public class StockRequest {
 
     @NotBlank(message = "La région est obligatoire")
     private String region;
+
+    @NotNull(message = "Le seuil d'alerte est obligatoire")
+    private Double warningThreshold;
+
+    @NotNull(message = "Le seuil critique est obligatoire")
+    private Double criticalThreshold;
 }

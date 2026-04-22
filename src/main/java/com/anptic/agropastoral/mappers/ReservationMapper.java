@@ -20,5 +20,6 @@ public interface ReservationMapper {
     @Mapping(target = "status", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "updatedAt", ignore = true)
+    @Mapping(target = "paidAt", ignore = true)
     Reservation toReservation(ReservationRequest reservationRequest);
 }

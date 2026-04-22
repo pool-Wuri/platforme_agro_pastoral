@@ -22,6 +22,7 @@ public class ReservationResponse {
     private UserResponse buyer;
     private Double quantity;
     private LocalDateTime reservedUntil;
+    private LocalDateTime paidAt;
     private ReservationStatus status;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;

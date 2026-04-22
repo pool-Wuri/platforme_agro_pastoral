@@ -2,6 +2,7 @@ package com.anptic.agropastoral.dto.stock;
 
 import com.anptic.agropastoral.dto.product.ProductResponse;
 import com.anptic.agropastoral.dto.user.UserResponse;
+import com.anptic.agropastoral.enums.AlertLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,5 +22,8 @@ public class StockResponse {
     private ProductResponse product;
     private Double quantity;
     private String region;
+    private Double warningThreshold;
+    private Double criticalThreshold;
+    private AlertLevel alertLevel;
     private LocalDateTime lastUpdated;
 }

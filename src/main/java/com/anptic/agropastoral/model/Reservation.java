@@ -32,6 +32,7 @@ public class Reservation {
 
     private Double quantity;
     private LocalDateTime reservedUntil;
+    private LocalDateTime paidAt;
 
     @Enumerated(EnumType.STRING)
     private ReservationStatus status;

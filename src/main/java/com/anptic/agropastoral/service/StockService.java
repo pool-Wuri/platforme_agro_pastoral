@@ -12,4 +12,5 @@ public interface StockService {
     StockResponse getStockById(UUID id);
     StockResponse updateStock(UUID id, StockRequest stockRequest);
     void deleteStock(UUID id);
+    void decrementStockAfterPayment(UUID productorId, UUID productId, String region, Double quantity, String reason);
 }

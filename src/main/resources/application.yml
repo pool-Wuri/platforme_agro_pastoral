@@ -21,3 +21,8 @@ jwt:
 logging:
   level:
     com.anptic.agropastoral.audit: INFO
+
+app:
+  reservation:
+    payment-deadline-hours: 24
+    expiration-check-cron: "0 */5 * * * *"

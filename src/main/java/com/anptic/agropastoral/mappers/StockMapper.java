@@ -19,5 +19,6 @@ public interface StockMapper {
     @Mapping(target = "product", ignore = true)
     @Mapping(target = "lastUpdated", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
+    @Mapping(target = "alertLevel", ignore = true)
     Stock toStock(StockRequest stockRequest);
 }

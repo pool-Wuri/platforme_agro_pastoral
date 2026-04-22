@@ -1,5 +1,6 @@
 package com.anptic.agropastoral.model;
 
+import com.anptic.agropastoral.enums.AlertLevel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,6 +32,11 @@ public class Stock {
 
     private Double quantity;
     private String region;
+    private Double warningThreshold;
+    private Double criticalThreshold;
+
+    @Enumerated(EnumType.STRING)
+    private AlertLevel alertLevel;
 
     private LocalDateTime lastUpdated;
     private LocalDateTime createdAt;

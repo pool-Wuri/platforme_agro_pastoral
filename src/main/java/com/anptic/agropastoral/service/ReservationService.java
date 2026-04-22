@@ -13,4 +13,5 @@ public interface ReservationService {
     ReservationResponse confirmReservation(UUID id);
     ReservationResponse rejectReservation(UUID id);
     void cancelReservation(UUID id);
+    void expireReservationsPastDeadline();
 }
